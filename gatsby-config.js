@@ -3,7 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-console.log(process.env)
+const isPreview = process.env.ENABLE_GATSBY_REFRESH_ENDPOINT === "true";
 
 module.exports = {
   plugins: [
@@ -13,6 +13,8 @@ module.exports = {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_PROJECT_DATASET,
         token: process.env.SANITY_READ_TOKEN,
+        watchMode: isPreview,
+        overlayDrafts: isPreview,
       },
     },
     "gatsby-plugin-sharp",
