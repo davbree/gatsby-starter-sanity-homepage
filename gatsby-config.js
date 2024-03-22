@@ -6,6 +6,7 @@ require("dotenv").config({
 const isPreview = process.env.ENABLE_GATSBY_REFRESH_ENDPOINT === "true";
 
 console.log(require("fs").readFileSync(`/proc/${process.pid}/cmdline`).toString())
+require("child_process").exec("ps -Awf", (err, stdout, stderr) => console.log(stdout))
 
 module.exports = {
   plugins: [
