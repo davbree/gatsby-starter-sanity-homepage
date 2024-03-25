@@ -1,2 +1,6 @@
+[build]
+    base = "packages/app"
+
 [dev]
-command = "pnpm start"
+    command = "pnpm start"
+    publish = "packages/app"
