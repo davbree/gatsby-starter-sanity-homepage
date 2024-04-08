@@ -14,7 +14,7 @@
     "gatsby-provision": "gatsby-provision-sanity --sanity-config-path='./studio' --sanity-content-path='./scripts/content.tar.gz'"
   },
   "dependencies": {
-    "shared": "workspace:*",
+    "my-shared": "^1.0.0",
     "@sanity/block-content-to-html": "^2.0.0",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.0.0",

@@ -5,7 +5,8 @@ require("dotenv").config({
 
 const isPreview = process.env.ENABLE_GATSBY_REFRESH_ENDPOINT === "true";
 
-require("shared").test()
+console.log(require("my-shared"))
+require("my-shared").test()
 
 module.exports = {
   plugins: [
