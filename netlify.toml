@@ -1,2 +1,3 @@
 [dev]
-command = "yarn workspace app develop"
+command = "echo $PWD && yarn workspace app develop"
+
