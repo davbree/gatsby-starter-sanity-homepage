@@ -2,4 +2,4 @@
 command = "gatsby develop && echo 'hey'"
 
 [build.environment]
-MY_TOM2L_ENV=1
+MY_TOM2L_ENV="1"
