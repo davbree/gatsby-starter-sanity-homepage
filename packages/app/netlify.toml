@@ -2,4 +2,4 @@
 command = "gatsby develop"
 
 [build.environment]
-MY_TOML_ENV=1
+MY_TOML_ENV="1"
